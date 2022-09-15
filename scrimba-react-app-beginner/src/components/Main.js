@@ -1,17 +1,17 @@
 import React from 'react';
 
-export default function Main() {
+export default function Main(props) {
 
-    return (<div className="main">
+    return (<main className={props.darkMode ? "dark" : ""}>
         <h1 className="main--title">Fun facts about React</h1>
         <ul className="main--facts">
-            <li className="list--item">Was released in 2013</li>
-            <li className="list--item">Was originally created by Jordan Walke</li>
-            <li className="list--item">Has over 100k stars in GitHub</li>
-            <li className="list--item">Is maintained by Facebook</li>
-            <li className="list--item">Powers thousands of enterprise apps, including mobile apps</li>
+            <li>Was released in 2013</li>
+            <li>Was originally created by Jordan Walke</li>
+            <li>Has over 100k stars in GitHub</li>
+            <li>Is maintained by Facebook</li>
+            <li>Powers thousands of enterprise apps, including mobile apps</li>
         </ul>
 
-    </div>
+    </main>
     )
 }
